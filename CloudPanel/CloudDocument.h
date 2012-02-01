@@ -3,11 +3,16 @@
 //  CloudPanel
 //
 //  Created by Hoshi Takanori on 12/02/01.
-//  Copyright (c) 2012年 -. All rights reserved.
+//  Copyright (c) 2012 -. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
 
-@interface CloudDocument : NSDocument
+@interface CloudDocument : NSDocument {
+    NSTextView *textView;
+    NSString *text;
+}
+
+@property (nonatomic, retain) IBOutlet NSTextView *textView;
 
 @end
