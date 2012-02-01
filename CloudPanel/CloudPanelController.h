@@ -46,7 +46,7 @@
 
 @property (nonatomic, retain) IBOutlet NSTextField *textField;
 
-+ (void)openPanelFor:(NSDocument *)document;
++ (void)openPanelFor:(NSWindowController *)windowController;
 
 - (IBAction)handleOK:(id)sender;
 - (IBAction)handleCancel:(id)sender;
