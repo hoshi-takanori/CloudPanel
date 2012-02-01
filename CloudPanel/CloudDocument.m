@@ -7,6 +7,7 @@
 //
 
 #import "CloudDocument.h"
+#import "CloudPanelController.h"
 
 @interface CloudDocument ()
 
@@ -50,6 +51,19 @@
         textView.string = text;
     }
     return YES;
+}
+
+- (BOOL)validateMenuItem:(NSMenuItem *)menuItem
+{
+    if (menuItem.action == @selector(saveToCloudAs:)) {
+        return (self.fileURL == nil);
+    }
+    return [super validateMenuItem:menuItem];
+}
+
+- (IBAction)saveToCloudAs:(id)sender
+{
+    [CloudSaveController openPanelFor:[self.windowControllers objectAtIndex:0]];
 }
 
 - (void)dealloc

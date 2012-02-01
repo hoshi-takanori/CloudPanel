@@ -276,6 +276,16 @@ static NSInteger compare(id obj1, id obj2, void *context)
     self.okButton.enabled = (self.filename.length > 0);
 }
 
+- (void)saveToURL:(NSURL *)url
+{
+    [windowController.document saveToURL:url ofType:DOC_TYPE forSaveOperation:NSSaveAsOperation completionHandler:^(NSError *error) {
+        if (error != nil) {
+            NSAlert *alert = [NSAlert alertWithError:error];
+            [alert beginSheetModalForWindow:windowController.window modalDelegate:nil didEndSelector:NULL contextInfo:NULL];
+        }
+    }];
+}
+
 - (void)sheetDidEnd:(NSWindow *)sheet returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo
 {
     if (returnCode == NSOKButton) {
@@ -300,7 +310,7 @@ static NSInteger compare(id obj1, id obj2, void *context)
                                 contextInfo:[url retain]];
             return;
         } else {
-            [windowController.document saveToURL:url ofType:DOC_TYPE forSaveOperation:NSSaveAsOperation error:NULL];
+            [self saveToURL:url];
         }
     }
 
@@ -313,7 +323,7 @@ static NSInteger compare(id obj1, id obj2, void *context)
     NSURL *url = (NSURL *) contextInfo;
 
     if (returnCode == NSAlertDefaultReturn) {
-        [windowController.document saveToURL:url ofType:DOC_TYPE forSaveOperation:NSSaveAsOperation error:NULL];
+        [self saveToURL:url];
     }
 
     [url release];
