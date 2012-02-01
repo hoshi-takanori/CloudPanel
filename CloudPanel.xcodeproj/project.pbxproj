@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D10A18A14D9604400C9E55F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D10A18914D9604400C9E55F /* Cocoa.framework */; };
+		8D10A19414D9604400C9E55F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D10A19214D9604400C9E55F /* InfoPlist.strings */; };
+		8D10A19614D9604400C9E55F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D10A19514D9604400C9E55F /* main.m */; };
+		8D10A19A14D9604400C9E55F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8D10A19814D9604400C9E55F /* Credits.rtf */; };
+		8D10A19D14D9604400C9E55F /* CloudDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D10A19C14D9604400C9E55F /* CloudDocument.m */; };
+		8D10A1A014D9604400C9E55F /* CloudDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D10A19E14D9604400C9E55F /* CloudDocument.xib */; };
+		8D10A1A314D9604500C9E55F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D10A1A114D9604500C9E55F /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8D10A18514D9604400C9E55F /* CloudPanel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudPanel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D10A18914D9604400C9E55F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8D10A18C14D9604400C9E55F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		8D10A18D14D9604400C9E55F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8D10A18E14D9604400C9E55F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8D10A19114D9604400C9E55F /* CloudPanel-Info.plist */ = {isa = PBXFileReference; path = "CloudPanel-Info.plist"; sourceTree = "<group>"; };
+		8D10A19314D9604400C9E55F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8D10A19514D9604400C9E55F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D10A19714D9604400C9E55F /* CloudPanel-Prefix.pch */ = {isa = PBXFileReference; path = "CloudPanel-Prefix.pch"; sourceTree = "<group>"; };
+		8D10A19914D9604400C9E55F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		8D10A19B14D9604400C9E55F /* CloudDocument.h */ = {isa = PBXFileReference; path = CloudDocument.h; sourceTree = "<group>"; };
+		8D10A19C14D9604400C9E55F /* CloudDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloudDocument.m; sourceTree = "<group>"; };
+		8D10A19F14D9604400C9E55F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CloudDocument.xib; sourceTree = "<group>"; };
+		8D10A1A214D9604500C9E55F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D10A18214D9604400C9E55F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D10A18A14D9604400C9E55F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D10A17A14D9604400C9E55F = {
+			isa = PBXGroup;
+			children = (
+				8D10A18F14D9604400C9E55F /* CloudPanel */,
+				8D10A18814D9604400C9E55F /* Frameworks */,
+				8D10A18614D9604400C9E55F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8D10A18614D9604400C9E55F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D10A18514D9604400C9E55F /* CloudPanel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D10A18814D9604400C9E55F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D10A18914D9604400C9E55F /* Cocoa.framework */,
+				8D10A18B14D9604400C9E55F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D10A18B14D9604400C9E55F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D10A18C14D9604400C9E55F /* AppKit.framework */,
+				8D10A18D14D9604400C9E55F /* CoreData.framework */,
+				8D10A18E14D9604400C9E55F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		8D10A18F14D9604400C9E55F /* CloudPanel */ = {
+			isa = PBXGroup;
+			children = (
+				8D10A19B14D9604400C9E55F /* CloudDocument.h */,
+				8D10A19C14D9604400C9E55F /* CloudDocument.m */,
+				8D10A19E14D9604400C9E55F /* CloudDocument.xib */,
+				8D10A1A114D9604500C9E55F /* MainMenu.xib */,
+				8D10A19014D9604400C9E55F /* Supporting Files */,
+			);
+			path = CloudPanel;
+			sourceTree = "<group>";
+		};
+		8D10A19014D9604400C9E55F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8D10A19114D9604400C9E55F /* CloudPanel-Info.plist */,
+				8D10A19214D9604400C9E55F /* InfoPlist.strings */,
+				8D10A19514D9604400C9E55F /* main.m */,
+				8D10A19714D9604400C9E55F /* CloudPanel-Prefix.pch */,
+				8D10A19814D9604400C9E55F /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D10A18414D9604400C9E55F /* CloudPanel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D10A1A614D9604500C9E55F /* Build configuration list for PBXNativeTarget "CloudPanel" */;
+			buildPhases = (
+				8D10A18114D9604400C9E55F /* Sources */,
+				8D10A18214D9604400C9E55F /* Frameworks */,
+				8D10A18314D9604400C9E55F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CloudPanel;
+			productName = CloudPanel;
+			productReference = 8D10A18514D9604400C9E55F /* CloudPanel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D10A17C14D9604400C9E55F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "-";
+			};
+			buildConfigurationList = 8D10A17F14D9604400C9E55F /* Build configuration list for PBXProject "CloudPanel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8D10A17A14D9604400C9E55F;
+			productRefGroup = 8D10A18614D9604400C9E55F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D10A18414D9604400C9E55F /* CloudPanel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D10A18314D9604400C9E55F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D10A19414D9604400C9E55F /* InfoPlist.strings in Resources */,
+				8D10A19A14D9604400C9E55F /* Credits.rtf in Resources */,
+				8D10A1A014D9604400C9E55F /* CloudDocument.xib in Resources */,
+				8D10A1A314D9604500C9E55F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D10A18114D9604400C9E55F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D10A19614D9604400C9E55F /* main.m in Sources */,
+				8D10A19D14D9604400C9E55F /* CloudDocument.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8D10A19214D9604400C9E55F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D10A19314D9604400C9E55F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8D10A19814D9604400C9E55F /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D10A19914D9604400C9E55F /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		8D10A19E14D9604400C9E55F /* CloudDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D10A19F14D9604400C9E55F /* en */,
+			);
+			name = CloudDocument.xib;
+			sourceTree = "<group>";
+		};
+		8D10A1A114D9604500C9E55F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D10A1A214D9604500C9E55F /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8D10A1A414D9604500C9E55F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8D10A1A514D9604500C9E55F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8D10A1A714D9604500C9E55F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CloudPanel/CloudPanel-Prefix.pch";
+				INFOPLIST_FILE = "CloudPanel/CloudPanel-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8D10A1A814D9604500C9E55F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CloudPanel/CloudPanel-Prefix.pch";
+				INFOPLIST_FILE = "CloudPanel/CloudPanel-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D10A17F14D9604400C9E55F /* Build configuration list for PBXProject "CloudPanel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D10A1A414D9604500C9E55F /* Debug */,
+				8D10A1A514D9604500C9E55F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D10A1A614D9604500C9E55F /* Build configuration list for PBXNativeTarget "CloudPanel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D10A1A714D9604500C9E55F /* Debug */,
+				8D10A1A814D9604500C9E55F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8D10A17C14D9604400C9E55F /* Project object */;
+}
