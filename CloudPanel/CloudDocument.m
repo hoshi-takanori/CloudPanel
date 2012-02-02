@@ -37,6 +37,10 @@
     if (text != nil) {
         textView.string = text;
     }
+
+    if ([self respondsToSelector:@selector(isInViewingMode)] && self.isInViewingMode) {
+        textView.editable = NO;
+    }
 }
 
 - (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError
@@ -64,6 +68,16 @@
 - (IBAction)saveToCloudAs:(id)sender
 {
     [CloudSaveController openPanelFor:[self.windowControllers objectAtIndex:0]];
+}
+
+- (void)windowWillEnterVersionBrowser:(NSNotification *)notification
+{
+    textView.editable = NO;
+}
+
+- (void)windowDidExitVersionBrowser:(NSNotification *)notification
+{
+    textView.editable = YES;
 }
 
 - (void)dealloc

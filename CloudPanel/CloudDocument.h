@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface CloudDocument : NSDocument {
+@interface CloudDocument : NSDocument <NSWindowDelegate> {
     NSTextView *textView;
     NSString *text;
 }
